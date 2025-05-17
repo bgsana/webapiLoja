@@ -16,7 +16,7 @@ async function carregarProdutos() {
             titulo.textContent = produto.produto_nome;
 
             const preco = document.createElement('p');
-            preco.textContent = `Preço: R$ ${Number(produto.produto_preco).toFixed(2).replace('.', ',')}`;
+            preco.textContent = `R$ ${Number(produto.produto_preco).toFixed(2).replace('.', ',')}`;
 
             card.appendChild(imagem);
             card.appendChild(titulo);
